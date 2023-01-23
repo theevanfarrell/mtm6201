@@ -42,6 +42,7 @@ body {
   }
   
   .emoji a {
+    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
@@ -50,5 +51,8 @@ body {
   }
   
   .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 4rem;
   }
