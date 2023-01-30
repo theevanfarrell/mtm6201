@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="top">
     <ul class="skip_links">
       <li><a href="#navigation">skip to main navagation</a></li>
       <li><a href="#main">skip to main content</a></li>
@@ -59,17 +59,17 @@
     <div class="contact-section" role="article" id="reservation">
       <h1 role="heading">Contact Us</h1>
       <form action="thanks.html">
-        <label>Full Name</label>
+        <label for="yourfullname">Full Name</label>
         <input type="text" placeholder="Full Name">
-        <input type="text" placeholder="Email">
+        <input type="email" placeholder="Email">
         <input type="text" placeholder="Subject">
         <b>Your Message</b>
-        <textarea aria-label="your_message"></textarea>
+        <textarea aria-label="yourmessage"placeholder="Your Message"></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
     <div role="contentinfo" class="site-footer">
-      &copy; 2021 Jam Box Studios
+      &copy; 2021 Jam Box Studios <a href="#top">Back to Top</a>
     </div>
   </div>
 </body>
