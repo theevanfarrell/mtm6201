@@ -1,8 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: grey;
-  margin: 0;
-  padding: 0;
 }
 
 h1,
@@ -28,8 +26,6 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .main-nav ul li {
