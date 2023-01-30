@@ -14,10 +14,15 @@
 
 <body>
   <div class="container">
+    <ul class="skip_links">
+      <li><a href="#navigation">skip to main navagation</a></li>
+      <li><a href="#main">skip to main content</a></li>
+    </ul>
+  </div> 
     <header role="banner">
       <div class="site-header">
         <h1 role="heading" id="home">Jam Box Studios</h1>
-        <div role="navigation" class="main-nav">
+        <div role="navigation" class="main-nav" id="navigation">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#welcome">Products</a></li>
@@ -28,7 +33,7 @@
       </div>  
       <img src="https://placekitten.com/1200/900" class="banner" alt="Image of grey tabby kitten">
     </header>
-    <main role="main" >
+    <main role="main" id="main">
       <div class="main-content" role="complementary">
         <h1 role="heading" id="welcome">Welcome to Jam Box</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
@@ -59,7 +64,7 @@
         <input type="text" placeholder="Email">
         <input type="text" placeholder="Subject">
         <b>Your Message</b>
-        <textarea role="textbox"></textarea>
+        <textarea aria-label="your_message"></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
