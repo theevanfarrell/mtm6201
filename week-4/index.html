@@ -17,6 +17,14 @@
     </div>
     <!-- landscape image viewport -->
     <picture>
+      <source media="(min-width: 720px)"
+             srcset="images/landscape/museum-720.png 720w,
+                     images/landscape/museum-1440.png 1440w,
+                     images/landscape/museum-2180.png 2180w"
+              sizes="(max-width: 720px) 720px,
+                     (max-width: 1440px) 1440px,
+                     (max-width: 2180px) 2180px">
+  
       <source media="(min-width: 480px)"
              srcset="images/landscape/museum-480.png 480w,
                      images/landscape/museum-960.png 960w,
