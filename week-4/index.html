@@ -15,8 +15,17 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <!-- landscape image viewport -->
+    <!-- square image viewport -->
     <picture>
+      <source media="(min-width: 960px)"
+             srcset="images/square/museum-480.jpg 480w,
+                     images/square/museum-960.jpg 960w,
+                     images/square/museum-1440.jpg 1440w"
+              sizes="(max-width: 480px) 480px,
+                     (max-width: 960px) 960px,
+                     (max-width: 1440px) 1440px">
+
+    <!-- landscape image viewport -->
       <source media="(max-width: 960px)"
              srcset="images/landscape/museum-960.png 960w,
                      images/landscape/museum-1920.png 1920w,
