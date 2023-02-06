@@ -17,6 +17,14 @@
     </div>
     <!-- square image viewport -->
     <picture>
+      <source media="(min-width: 1280px)"
+             srcset="images/square/museum-640.jpg 640w,
+                     images/square/museum-1280.jpg 1280w,
+                     images/square/museum-1920.jpg 1920w"
+              sizes="(max-width: 640px) 640px,
+                     (max-width: 1280px) 1280px,
+                     (max-width: 1920px) 1920px">
+
       <source media="(min-width: 960px)"
              srcset="images/square/museum-480.jpg 480w,
                      images/square/museum-960.jpg 960w,
