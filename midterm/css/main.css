@@ -30,6 +30,7 @@ ul{
     position: fixed;
     background-color: #51314d;
     overflow: hidden;
+    z-index: 99;
 }
 
 .menu a{
