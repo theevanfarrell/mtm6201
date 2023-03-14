@@ -214,3 +214,41 @@ footer p {
     padding-top: 4%;
     padding-left: 5%;
 }
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.textbox {
+    width: 99%;
+    height: 30px;
+    margin-bottom: 8px;
+    border: 2px solid black;
+}
+
+.messagebox {
+    width: 99%;
+    height: 130px;
+    margin-bottom: 8px;
+    border: 2px solid black;
+}
+
+.contact_button{
+    background-color: #97BC61;
+    color:  #51314d;
+    font-size: 1.1rem;
+}
+
+.services_padding {
+    padding: 10px;
+}
