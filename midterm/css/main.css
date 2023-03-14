@@ -95,7 +95,7 @@ ul{
 
 /* Responsiveness */
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .nav{
         max-height: none;
         top: 0;
@@ -103,7 +103,6 @@ ul{
         float: right;
         width: fit-content;
         background-color: transparent;
-
     }
 
     .menu li{
@@ -120,9 +119,10 @@ ul{
     }
 }
 .wrapper {
-    padding: 10px;
     margin: auto;
-    width: 100%;
+    width: 95%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .flower_img {
     width: 100%;
@@ -135,7 +135,7 @@ ul{
 }
 
 .grouping {
-    width: 96%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -171,8 +171,13 @@ ul{
 }
 footer {
     display: flex;
+    justify-content: center;
     color: white;
     background-color: #51314d;
     padding-top: 30px;
     padding-bottom: 40px;
+}
+footer p {
+    padding-top: 4%;
+    padding-left: 5%;
 }
