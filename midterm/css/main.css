@@ -102,26 +102,6 @@ ul{
     max-height: 100%;
 }
 
-
-/* Allows the hamburger menu to only work at mobile sizes. When anything above, the menu expands */
-@media (min-width: 760px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-    }
-
-    .menu li{
-        float: left;
-    }
-
-    .hamburger_menu{
-        display: none;
-    }
-}
 /* A container used to keep text in the center of an image */
 .banner_container {
     font-family: 'Cormorant Garamond', serif;
@@ -293,4 +273,24 @@ h4 {
 /* Makes owner images fit to the screen*/
 .owner {
     width: 100%;
+}
+
+/* Allows the hamburger menu to only work at mobile sizes. When anything above, the menu expands */
+@media (min-width: 760px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .hamburger_menu{
+        display: none;
+    }
 }
