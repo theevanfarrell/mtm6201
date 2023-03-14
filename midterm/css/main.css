@@ -150,12 +150,12 @@ ul{
     width: 96;
     padding: 2%;
 }
-.flower_img {
+.small_img {
     width: 100%;
     height: auto;
 }
 
-.macaroon_img {
+.big_img {
     width: 100%;
     height: auto;
 }
@@ -168,10 +168,10 @@ ul{
     grid-gap: 10px;
 }
 
-.grouping .flower_img {
+.grouping .small_img {
     grid-area: 1/1/1/1;
 }
-.grouping .macaroon_img {
+.grouping .big_img {
     grid-area: 2/2/3/4;
 }
 
@@ -229,6 +229,14 @@ h3 {
     padding-bottom: 10px;
 }
 
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #b7c3f3;
+}
+
 .textbox {
     width: 99%;
     height: 30px;
@@ -251,4 +259,8 @@ h3 {
 
 .services_padding {
     padding: 10px;
+}
+
+.owner {
+    width: 100%;
 }
