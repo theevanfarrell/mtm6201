@@ -1,29 +1,32 @@
+/* Sets a default background and default fonts */
 body{
     background-color: white;
     font-family: "Poppins", sans-serif;
 }
 
+/* Removes the menus links underlines */
 a{
     text-decoration: none;
 }
 
+/* removes points from nav list */
 ul{
     list-style: none;
 }
 
-/* Header */
+/* Creates header and sets width to fill the screen */
 .header{
     background-color: #51314d;
     top: 0;
     width: 100%;
 }
 
-/* Logo */
+/* Sets size for logo */
 .logo{
     width: 150px;
 }
 
-/* Nav menu */
+/* Creates nav menu that hides the nav information until its clicked on. Also is set to be above all other content */
 .nav{
     width: 100%;
     height: 100%;
@@ -33,29 +36,31 @@ ul{
     z-index: 99;
 }
 
+/* Sets menu colour and displays the menu links with more width using display: block; */
 .menu a{
     display: block;
     padding: 30px;
     color: white;
 }
 
+/* Makes it so that when you hover over a link, the link highlights in a low opacity white colour */
 .menu a:hover{
     background-color: rgb(225, 225, 225,0.25);
 }
 
+/* Creates the animation for opening the hamburger menu*/
 .nav{
     max-height: 0;
     transition: max-height .6s ease-in-out;
 }
 
-/* Menu Icon */
+/* Creates the menu icon location */
 .hamburger_menu{
-    cursor: pointer;
     float: right;
     padding: 15px 10px;
 }
 
-
+/* Creates a single menu's line and justifies it's location */
 .menu_lines {
     background: white;
     display: block;
@@ -65,6 +70,7 @@ ul{
     
 }
 
+/* Creates the top and bottom menu lines */
 .menu_lines::before,
 .menu_lines::after{
     background: white;
@@ -76,26 +82,28 @@ ul{
     width: 100%;
 }
 
+/* Sets the top menu lines distance from the center line */
 .menu_lines::before{
     top: 5px;
 }
 
+/* Sets the bottom menu lines distance from the center line */
 .menu_lines::after{
     top: -5px;
 }
 
+/* hides the checkmark box used to create the menu */
 .side-menu {
     display: none;
 }
 
-/* Toggle menu icon */
-
+/* Allows the menu to be clicked on */
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
 
-/* Responsiveness */
 
+/* Allows the hamburger menu to only work at mobile sizes. When anything above, the menu expands */
 @media (min-width: 760px) {
     .nav{
         max-height: none;
@@ -110,15 +118,11 @@ ul{
         float: left;
     }
 
-    .menu a:hover{
-        background-color: transparent;
-        color: white;
-    }
-
     .hamburger_menu{
         display: none;
     }
 }
+/* A container used to keep text in the center of an image */
 .banner_container {
     font-family: 'Cormorant Garamond', serif;
     position: relative;
@@ -126,6 +130,7 @@ ul{
     color:  #51314d;
 }
 
+/* Changes an image size to shrink its height while retaining its width */
 .banner {
     padding-top: 5px;
     width: 100%;
@@ -133,6 +138,7 @@ ul{
     object-fit: cover;
 }
 
+/* Used to keep text in the center of an image */
 .slogan {
     padding-top: 25px;
     width: 100%;
@@ -145,21 +151,26 @@ ul{
     transform: translate(-50%, -50%);
 }
 
+/* Used to contain most media, keeping spacing and sizing consistant */
 .wrapper {
     margin: auto;
     width: 96%;
     padding: 2%;
 }
+
+/* Sets a standard size for small images */
 .small_img {
     width: 100%;
     height: auto;
 }
 
+/* Sets a standard size for large images */
 .big_img {
     width: 100%;
     height: auto;
 }
 
+/* Used to create a three by three grid. Used on the home page to resize content  */
 .grouping {
     width: 100%;
     display: grid;
@@ -168,28 +179,35 @@ ul{
     grid-gap: 10px;
 }
 
+/* Sets a specific location for the small image */
 .grouping .small_img {
     grid-area: 1/1/1/1;
 }
+
+/* Sets a specific location for the big image */
 .grouping .big_img {
     grid-area: 2/2/3/4;
 }
 
+/* Sets a specific location for the first rectangle */
 .rectangle_1{
     grid-area: 1/2/2/4;
     background-color: #97bc61;
 }
 
+/* Sets a specific location for the second rectangle */
 .rectangle_2{
     grid-area: 2/1/2/1;
     background-color: #97bc61;
 }
 
+/* Sets a specific location for the long rectangle */
 .long_rectangle {
     background-color: #b7c3f3;
     grid-area: 3/1/3/4;
 }
 
+/* Sets sizing rules for the text inside the rectangles */
 .rectangle_1, .rectangle_2, .long_rectangle p{
     font-size: 80%;
     padding: 20px;
@@ -198,10 +216,13 @@ ul{
     line-height: 150%;
 }
 
+/* Makes the logo smaller, as well as giving it more space to the left */
 .bun_logo {
     width: 12%;
     padding-left: 12px;
 }
+
+/* Makes the footer content center using flex. specifies more space as well. */
 footer {
     display: flex;
     justify-content: center;
@@ -210,12 +231,14 @@ footer {
     padding-top: 30px;
     padding-bottom: 40px;
 }
+
+/* Gives the footer text more room from the top */
 footer p {
     padding-top: 4%;
     padding-left: 5%;
 }
 
-
+/* Makes all h2's have a certain size and weight */
 h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -223,12 +246,14 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* Makes all h3's have a certain size and weight */
 h3 {
     font-size: 1em;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
+/* Makes all h4's have a certain size and weight, along with a purple background */
 h4 {
     font-size: 2rem;
     font-weight: 700;
@@ -237,6 +262,7 @@ h4 {
     background-color: #b7c3f3;
 }
 
+/* Makes all textboxes longer, with a black border*/
 .textbox {
     width: 99%;
     height: 30px;
@@ -244,6 +270,7 @@ h4 {
     border: 2px solid black;
 }
 
+/* Makes the message box longer and wider, along with a black border */
 .messagebox {
     width: 99%;
     height: 130px;
@@ -251,16 +278,19 @@ h4 {
     border: 2px solid black;
 }
 
+/* Changes the submit buttons colour and size */
 .contact_button{
     background-color: #97BC61;
     color:  #51314d;
     font-size: 1.1rem;
 }
 
+/* Makes all inside have a padding of 10px */
 .services_padding {
     padding: 10px;
 }
 
+/* Makes owner images fit to the screen*/
 .owner {
     width: 100%;
 }
