@@ -49,14 +49,14 @@ ul{
 }
 
 /* Menu Icon */
-.hamb{
+.hamburger_menu{
     cursor: pointer;
     float: right;
     padding: 15px 10px;
 }
 
 
-.hamb-line {
+.menu_lines {
     background: white;
     display: block;
     height: 1px;
@@ -65,8 +65,8 @@ ul{
     
 }
 
-.hamb-line::before,
-.hamb-line::after{
+.menu_lines::before,
+.menu_lines::after{
     background: white;
     content: '';
     display: block;
@@ -76,11 +76,11 @@ ul{
     width: 100%;
 }
 
-.hamb-line::before{
+.menu_lines::before{
     top: 5px;
 }
 
-.hamb-line::after{
+.menu_lines::after{
     top: -5px;
 }
 
@@ -115,7 +115,7 @@ ul{
         color: white;
     }
 
-    .hamb{
+    .hamburger_menu{
         display: none;
     }
 }
