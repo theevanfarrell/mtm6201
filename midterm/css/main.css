@@ -138,31 +138,38 @@ ul{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
 
 .grouping .flower_img {
     grid-area: 1/1/1/1;
 }
+.grouping .macaroon_img {
+    grid-area: 2/2/3/4;
+}
 
-.rectangle {
+.rectangle_1{
+    grid-area: 1/2/2/4;
     background-color: #97bc61;
 }
-.rectangle p {
-    font-size: 80%;
-    padding: 20px;
-    color: white;
+
+.rectangle_2{
+    grid-area: 2/1/2/1;
+    background-color: #97bc61;
 }
 
 .long_rectangle {
     background-color: #b7c3f3;
-    grid-area: 3/1/3/3;
+    grid-area: 3/1/3/4;
 }
-.long_rectangle p {
+
+.rectangle_1, .rectangle_2, .long_rectangle p{
     font-size: 80%;
     padding: 20px;
     color: white;
+    text-align: center;
+    line-height: 150%;
 }
 
 .bun_logo {
