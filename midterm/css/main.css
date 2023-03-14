@@ -119,6 +119,7 @@ ul{
     }
 }
 .banner_container {
+    font-family: 'Cormorant Garamond', serif;
     position: relative;
     text-align: center;
     color:  #51314d;
